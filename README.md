@@ -1,6 +1,6 @@
-# Mybrary Web Application
+# Recipe Web Application
 
-Recipe-Web-Application is a very simple web app for recipes.
+Recipe Web Application is a very simple web app for recipes.
 
 ### Build
 
@@ -14,7 +14,7 @@ Go to **localhost:3000**
 
 ### Tech
 
-Following the MVC (Model, View, Controller) pattern, Mybrary uses some open source projects to work properly:
+Following the MVC (Model, View, Controller) pattern, Recipe-Web-App uses some open source projects to work properly:
 
 * HTML and CSS for structuring and styling the web app
 * [node.js] - evented I/O for the backend
