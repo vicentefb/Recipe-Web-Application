@@ -1,0 +1,23 @@
+<h2 class="page-header">Search Recipes</h2>
+<div>
+    <form action="/recipes" method="GET">
+        <h3 style="margin-top: 40px">Filter By Ingredients: </h3>
+        <% ingredients.forEach(ingredient => { %>
+            <input type="checkbox" name="ingredient" value="<%= ingredient %>">
+            <label for="<%= ingredient %>"><%= ingredient %></label>
+        <% }) %>
+        <button class="btn btn-primary" type="submit">Filter</button>
+    </form>
+    <h3 style="margin-top: 40px">Search Recipe</h3>
+        <form action="/recipes" method="GET">
+            <div>
+                <div>
+                    <label>Title</label>
+                    <input type="text" name="title" value="<%= searchOptions.title%>">
+                    <button class="btn btn-primary" type="submit">Search</button>
+                </div>
+            </div>
+        </form>
+</div>
+<br>
+<%- include('../partials/recipeGrid', {recipes: recipes}) %>

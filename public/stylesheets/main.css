@@ -1,0 +1,27 @@
+@import 'shared/recipes.css';
+
+:root {
+	font-size: 20px;
+}
+
+/*select all elements, select all before elements, select all after elements*/
+*, *::before, *::after{
+	box-sizing:border-box;
+}
+
+.container{
+	max-width: 1200px;
+	/*Equal margin on the left and right*/
+	margin: auto;
+	/*So the content doesn't touch the bottom of the screen*/
+	margin-bottom: 3rem;
+}
+
+.inner-container{
+	margin:0 2rem;
+}
+
+.page-header{
+	font-size: 2rem;
+	font-weight: 500;
+}

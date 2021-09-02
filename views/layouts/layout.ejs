@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link href="https://unpkg.com/filepond/dist/filepond.css" rel="stylesheet">
+	<link href="https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.css" rel="stylesheet">
+	<!-- defer keyword helps us to wait until the body is rendered-->
+	<script defer src="https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.js"></script>
+	<script defer src="https://unpkg.com/filepond-plugin-file-encode/dist/filepond-plugin-file-encode.js"></script>
+	<script defer src="https://unpkg.com/filepond-plugin-image-resize/dist/filepond-plugin-image-resize.js"></script>
+	<script defer src="https://unpkg.com/filepond/dist/filepond.js"></script>
+	<!-- This needs to be created inside the public folder-->
+	<link id="main-css" rel="stylesheet" href="/stylesheets/main.css">
+	<title>Recipes</title>
+</head>
+<body>
+	<div class="container">
+		<%- include('../partials/header.ejs') %>
+		<div class="inner-container">
+			<!-- this body variable is to be able to put every information from all files inside views folder but have the same layout and not having to copy everything again -->
+			<%- body %>
+		</div>
+	</div>
+</body>
+</html>
